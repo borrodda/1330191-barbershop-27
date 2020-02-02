@@ -34,7 +34,55 @@
       </ul>
       <section>
         <h2>Фильтр товаров</h2>
-        <!-- Здесь будет форма -->
+        <form action="htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Производители</legend>
+            <ul>
+              <li>
+                <input type="checkbox" checked name="baxter" id="baxter-field">
+                <label for="baxter-field">Baxter of California</label>
+              </li>
+              <li>
+                <input type="checkbox" name="natty" id="natty-field">
+                <label for="natty-field">Mr Natty</label>
+              </li>
+              <li>
+                <input type="checkbox" checked name="suavecito" id="suavecito-field">
+                <label for="suavecito-field">Suavecito</label>
+              </li>
+              <li>
+                <input type="checkbox" name="malin-goetz" id="malin-goetz-field">
+                <label for="malin-goetz-field">Malin-goetz</label>
+              </li>
+              <li>
+                <input type="checkbox" name="murray" id="murray-field">
+                <label for="murrau-field">Murray's</label>
+              </li>
+              <li>
+                <input type="checkbox" checked name="american-crew" id="american-crew-field">
+                <label for="american-crew-field">Baxter of California</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Группы товаров</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="shaving" id="shaving-field">
+                <label for="shaving-field">Бритвенные принадлежности</label>
+              </li>
+              <li>
+                <input type="checkbox" checked name="caring" id="caring-field">
+                <label for="caring-field">Средства для ухода</label>
+              </li>
+              <li>
+                <input type="checkbox" name="accessories" id="accessories-field">
+                <label type="checkbox">Аксессуары</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section>
@@ -162,8 +210,23 @@
 
     <section>
       <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
+      <p>Введите пожалуйста свой логин и пароль.</p>
+      <form action="htmlacademy.ru" method="post">
+        <p>
+          <label for="user-login">Логин</label>
+          <input id="user-login" type="email" name="login" placeholder="www@mail.ru">
+        </p>
+        <p>
+          <label for="user-password">Пароль</label>
+          <input id="user-password" type="password" name="password" placeholder="******">
+        </p>
+        <p>
+          <input type="checkbox" name="remember-me" id="remember-me-field" checked>
+          <label for="remember-me-field">Запомните меня</label>
+          <a href="#">Я забыл пароль</a>
+        </p>
+        <button type="submit">Войти</button>
+      </form>
       <button type="button">Закрыть</button>
     </section>
   </body>
